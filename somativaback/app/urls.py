@@ -11,7 +11,7 @@ router.register(r'funcionarios', FuncionarioViewSet)
 router.register(r'categorias', CategoriaViewSet)
 router.register(r'produtos', ProdutoViewSet)
 router.register(r'maquinas', MaquinaViewSet)
-router.register(r'lotes', LoteViewSet)
+router.register(r'lotes', LoteViewSet, basename='lote')
 router.register(r'itens-producao', ItemProducaoViewSet)
 router.register(r'manutencao', ManutencaoViewSet)
 

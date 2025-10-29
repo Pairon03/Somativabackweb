@@ -1,6 +1,9 @@
 from .__init__ import *
 from ..models.maquinas import Maquina
 from ..serializers.maquinas import MaquinaSerializer
+from ..permissions import IsManutencaoOrEngenhariaOrAdmin, IsManutencaoOrAdmin, get_user_cargo 
+from django.utils import timezone
+from datetime import timedelta
 
 class MaquinaViewSet(viewsets.ModelViewSet):
     queryset = Maquina.objects.all()
